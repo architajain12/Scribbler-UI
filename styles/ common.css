@@ -1,0 +1,87 @@
+.title-logo {
+    font-family: 'Montez', cursive; 
+    color: royalblue;
+    margin: 5px;
+    font-size: xx-large;
+}
+
+.subheading {
+    font-family: 'Ubuntu Mono', monospace;
+	color: black;
+    margin: 5px;
+    margin-top: 0;
+    font-size: medium;
+}
+
+.header-btn {
+    float: right;
+    cursor: pointer;
+    background: royalblue;
+    color: whitesmoke;
+    padding: 10px;
+    width: 6%;
+    margin: 5px;
+    font-size: medium;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 30px;
+}
+  
+.close:hover, .close:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15%;
+    align-items: center;
+    padding-top: 0%;
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.modal-header {
+    padding: 15px;
+    color: gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float: left;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    background: #fff;
+    align-items: center;
+}
+
+#signUpModal button {
+    width: 100%;
+}
+
+#signInModal button {
+    width: 100%;
+}
+
+#redirectToSignup {
+    text-align: center;
+}
+
+#redirectSignUp {
+    color: blue;
+    cursor: pointer;
+}
