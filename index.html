@@ -85,7 +85,36 @@
         </div>
     </div>
 
+    <div class="post-options">
+        <button type="button" class="post-btn" id="allPosts" onclick="window.location.href = './html/postslist.html';">All Posts</button>
+        <button type="button" class="post-btn" id="createPostsBtn" data-target="#createPosts" data-toggle="modal">Create Posts</button>
+    </div> 
+
+    <!-- Create Posts Modal -->
+    <div id="createPosts" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Pen Your Post</h2>
+            <span class="close" id="closeCreatePost">&times;</span>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="title" class="label-text">Title</label>
+                  <input class="form-control gray-area" type="text" id="title" placeholder="Enter title of your post" required> <br>
+                  <label for="content">Contents</label>
+                  <textarea id="content" rows="8" cols="40" class="form-control gray-area" placeholder="Enter the contents of your post" required></textarea> <br>
+                  <div class="modal-footer justify-content-center border-top-0 d-flex">
+                    <button type="submit" class="btn btn-success" style="width: 25%">Create</button>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
     <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

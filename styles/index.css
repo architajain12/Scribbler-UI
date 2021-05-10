@@ -10,3 +10,32 @@ body {
     height: 100%;
     background-attachment: fixed;
 }
+
+.post-options {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    place-content: center;
+    gap: 1ch;
+    column-gap: 10px;
+    grid-template-columns: 145px 145px;
+    grid-template-rows: auto;
+}
+
+.post-btn {
+    background-color: rgb(236, 236, 60);
+    color: black;
+    cursor: pointer;
+}
+
+.gray-area {
+    background-color: rgba(185, 178, 178, 0.678);
+    color: rgba(0, 0, 0, 0.678);
+}
+
+#createPosts {
+    width: 100%;
+    padding: 2%;
+}
