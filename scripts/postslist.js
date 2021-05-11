@@ -1,11 +1,21 @@
 const deletePostModal = document.querySelector('#delPostModal');
 const deletePost1 = document.querySelector('#delPost1');
+const deletePost2 = document.querySelector('#delPost2');
+const deletePost3 = document.querySelector('#delPost3');
+const deletePost4 = document.querySelector('#delPost4');
+const deletePost5 = document.querySelector('#delPost5');
+
 const closeDelPost = document.querySelector('#dontDelete');
-const cards = document.querySelectorAll('.card-content')[4];
+const postContainer = document.querySelector('.posts-container');
 
 deletePost1.addEventListener('click', delPost);
+deletePost2.addEventListener('click', delPost);
+deletePost3.addEventListener('click', delPost);
+deletePost4.addEventListener('click', delPost);
+deletePost5.addEventListener('click', delPost);
+
 closeDelPost.addEventListener('click', dontDeletePost);
-cards.addEventListener('click', savePostDetails);
+postContainer.addEventListener('click', savePostDetails);
 
 function delPost() {
     deletePostModal.style.display = 'block';
@@ -26,7 +36,11 @@ function openEntirePost(author, title, content) {
 }
 
 function savePostDetails(e) {
-    const card = e.currentTarget;
+    console.log(e);
+    if(e.target.tagName != 'I') {
+        return;
+    }
+    const card = e.target.parentNode.parentNode.parentNode;
     const author = card.children[0].children[0].textContent;
     const title = card.children[1].children[0].children[0].textContent;
     const content = card.children[1].children[1].textContent;
