@@ -8,6 +8,8 @@
 .by-line {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2%;
 }
 
 .authorName {
