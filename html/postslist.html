@@ -99,7 +99,7 @@
                     <p class="post-title">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
                         <!--  Include Font Awesome icon for delete icon here -->
-                        <i class="fa fa-trash trash-icon"></i>
+                        <i class="fa fa-trash trash-icon" data-toggle="modal" data-target="#delPostModal" id="delPost1"></i>
                     </span>
                 </div>
                 <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
@@ -205,11 +205,21 @@
         </div>
         <!-- post 5 ends here -->
 
-        <!-- Write code for delete post modal here -->
+        <!-- Delete post modal -->
+        <div id="delPostModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-body">
+                    <h5>Are you sure you want to delete this post?</h5> <br>
+                    <button type="button" id="yesDelete">Yes</button>
+                    <button type="button" id="dontDelete">No</button>
+              </div>
+            </div>
+        </div>
 
     </div>
     <!-- list of all posts ends here -->
     <script src="../scripts/common.js"></script>
+    <script src="../scripts/postslist.js"></script>
 </body>
 
 </html>
