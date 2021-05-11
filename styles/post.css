@@ -1,0 +1,59 @@
+.heading {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.by-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.authorName {
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: large;
+    width: 50%;
+}
+
+.edit-btn {
+    margin-top: 2%;
+    align-self: flex-end;
+    right: 1%;
+    cursor: pointer;
+}
+
+.post-content {
+    margin: 5%;
+    margin-top: 2%;
+    text-align:justify;
+    margin-bottom: 2%;
+}
+
+#like-btn {
+    margin: 5%;
+    margin-top: 0%;
+}
+
+#showLikes {
+    margin: 5%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+.comments {
+    margin-left: 5%;
+}
+
+.all-comments-title {
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.all-comments {
+    background-color: gray;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
