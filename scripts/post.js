@@ -5,7 +5,7 @@ document.querySelector('#content').textContent = postDetails.content;
 
 const title = document.getElementById('title');
 const content = document.getElementById('content');
-const likebtn = document.querySelector('.like-btn');
+const likebtn = document.querySelector('#like-btn');
 const likeText = document.querySelector('#like');
 const editBtn = document.querySelector('#edit-btn');
 editBtn.addEventListener('click', toggleEdit);
@@ -15,18 +15,18 @@ editBtn.addEventListener('click', edit);
 var likes = 0;
 const comments = [];
 
-// likebtn.addEventListener('click', like);
+likebtn.addEventListener('click', like);
 
-// function like() {
-//     likes += 1;
-//     const likeDisplay = document.getElementById('showLikes');
-//     likeText.innerHTML = 'Liked';
-//     if (count == 1) {
-//         likeDisplay.innerHTML = `${likes} person likes this !`;
-//     } else {
-//         likeDisplay.innerHTML = `${likes} people like this !`;
-//     }
-// }
+function like() {
+    likes += 1;
+    const likeDisplay = document.getElementById('showLikes');
+    likeText.innerHTML = 'Liked';
+    if (likes == 1) {
+        likeDisplay.innerHTML = `${likes} person likes this !`;
+    } else {
+        likeDisplay.innerHTML = `${likes} people like this !`;
+    }
+}
 
 function addingComment(item, index) {
     const temp = document.getElementById('comments').innerHTML;
